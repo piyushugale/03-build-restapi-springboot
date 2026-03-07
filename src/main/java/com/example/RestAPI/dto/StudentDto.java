@@ -1,15 +1,19 @@
+// controller > dto > service > entity > repository
 package com.example.RestAPI.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data                                                   // spring creates getters and setters in backend
-@AllArgsConstructor                                     // constructor with one parameter for every field in your class. do not create getter setters - did not work
-@NoArgsConstructor                                      // Default constructor
+@Getter
+@Setter
 public class StudentDto {
     private Long id;
     private String name;
     private String email;
 }
+
+/*
+Note -
+1. Adding Constructors  : Tried to add @Data, @NoArgsConstructor, @AllArgsConstructor - this did not create constructors by default hence had to comment
+2. Adding Getter,Setters: Either do alt+insert > auto generate constructors and getters/setters OR @Getter, @Setter above class
+*/
 

@@ -1,5 +1,5 @@
+// controller > dto > service > entity > repository
 package com.example.RestAPI;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,8 +12,20 @@ public class RestApiApplication {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*
-controller > dto > service > entity > dao
+controller > dto > service > entity > repository
 
 request --> CONTROLLER <------- dto -------> SERVICE (model) <----- entity ----> Repository/DAO ---->> Database
                           json serialization
