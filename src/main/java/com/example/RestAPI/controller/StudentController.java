@@ -5,6 +5,7 @@ import com.example.RestAPI.service.StudentService;
 import io.swagger.v3.oas.annotations.Hidden;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -18,7 +19,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    @Hidden
+//    @Hidden                                                   // This annotation is used to hide the endpoint from the Swagger UI documentation
     @GetMapping("/student")
     public List<StudentDto> getAllStudents(){
         return studentService.getAllStudents();
@@ -28,5 +29,7 @@ public class StudentController {
     public StudentDto getStudentById(@PathVariable Long id) {
         return studentService.getStudentById(id);
     }
+
+
 
 }

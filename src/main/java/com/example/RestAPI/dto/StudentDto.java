@@ -1,4 +1,4 @@
-// controller > dto > service(i) > entity > repository(i)
+// controller > dto(public data) > service(i) > entity(hidden data) > repository(i)
 package com.example.RestAPI.dto;
 
 import lombok.*;

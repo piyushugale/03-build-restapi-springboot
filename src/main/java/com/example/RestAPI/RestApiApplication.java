@@ -27,6 +27,9 @@ public class RestApiApplication {
 /*
 controller > dto > service > entity > repository
 
+DTO - Public version of your data (exposed to users as json)
+Entity - Private version of your data (to interact with database)
+
 request --> CONTROLLER <------- dto -------> SERVICE (model) <----- entity ----> Repository/DAO ---->> Database
                           json serialization
 	                      (json <> java obj)
