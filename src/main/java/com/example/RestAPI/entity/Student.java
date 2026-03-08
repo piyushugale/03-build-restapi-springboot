@@ -18,7 +18,6 @@ public class Student {
     private String name;
     private String email;
 
-    // Add getter setters
     public Long getId() {
         return id;
     }
